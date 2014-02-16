@@ -1,10 +1,11 @@
 body {
-  /*background: url(../img/bg.jpg) no-repeat center center fixed; */
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  /*background-color: black;*/
+  background: url(../images/notebook.png) repeat;
+  /*background: url(../images/agsquare.png) repeat;*/
+  -webkit-background-size: 400px;
+  -moz-background-size: 400px;
+  -o-background-size: 400px;
+  background-size: 400px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.6em;
   line-height: 1.6;
   color: #000;
 }
@@ -64,6 +65,7 @@ hr {
 .box {
   background: #fff;
   background: rgba(255,255,255,0.9);
+  opacity: 0.8;
   margin-bottom: 20px;
   padding: 30px 15px;
 }
@@ -71,7 +73,8 @@ hr {
 .intro-text {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.25em;
+  font-family: Helvetica;
+  font-size: 1.75em;
   font-weight: 400;
 }
 
@@ -89,6 +92,7 @@ hr {
 footer {
   background: #fff;
   background: rgba(255,255,255,0.9);
+  opacity: 0.8;
 }
 
 footer p {
@@ -149,6 +153,7 @@ footer p {
 .navbar-default {
   background: #fff;
   background: rgba(255,255,255,0.9);
+  opacity: 0.8;
   border: none;
 }
 
@@ -165,7 +170,7 @@ footer p {
   margin: 0 auto;
   display: table;
   table-layout: fixed;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 }
@@ -176,4 +181,11 @@ footer p {
         display: table;
         clear: both;
     }
+}
+
+a.empty_link {
+    color: black;
+    /*text-decoration:none;*/
+    text-decoration: underline;
+    text-transform: uppercase;
 }
