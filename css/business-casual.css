@@ -25,6 +25,10 @@ hr {
   max-width: 400px;
 }
 
+.normal-line{
+    font-size: 1.4em;
+}
+
 .brand,
 .address-bar,
 .blog-title,
