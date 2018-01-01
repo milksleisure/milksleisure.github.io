@@ -2,17 +2,28 @@
 
 {% block body %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-      <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-      <ul class="list-unstyled">
-        <li>Bootstrap 4.0.0-beta</li>
-        <li>jQuery 3.2.1</li>
-      </ul>
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('{{url_for('static', filename='img/masthead.jpg')}}')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>BR's Web Playground</h1>
+          <span class="subheading">Learn some new tricks every day</span>
+        </div>
+      </div>
     </div>
   </div>
+</header>
+
+<div class="container">
 </div>
+
+<footer>
+<div class="container">
+<p>Material from <a href="https://freestocks.org/photo/a-planner-and-a-phone/">freestocks.org</a> under CC0 license</p>
+</div>
+</footer>
 
 {% endblock %}
