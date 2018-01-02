@@ -16,13 +16,20 @@
 
     <!-- content -->
     <div class="col-sm-9">
-      <h1 class="profile-title">Bing-Ru Wu</h1>
-      <div class="profile-subtitle">
-        Taiwan· <a href="mailto:killuaken@gmail.com">killuaken@gmail.com</a>
+      <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="tab" href="#standard">English</a></li>
+        <li><a data-toggle="tab" href="#chinese">中文</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="standard" class="tab-pane fade in active">
+          {% include 'about_me/bio.html' %}
+        </div>
+        <div id="chinese" class="tab-pane fade">
+          {% include 'about_me/bio_chinese.html' %}
+        </div>
       </div>
-      <div class="profile-content">
-      {% include 'about_me/bio.html' %}
-      </div>
+
       <ul class="list-inline list-social-icons mb-0">
         <li class="list-inline-item">
           <a href="https://www.facebook.com/milksleisure">
@@ -36,7 +43,7 @@
           <a href="https://github.com/milksleisure/">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
             </span>
           </a>
         </li>
@@ -44,7 +51,7 @@
           <a href="https://www.linkedin.com/in/ping-ru-wu-84802958">
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
             </span>
           </a>
         </li>
