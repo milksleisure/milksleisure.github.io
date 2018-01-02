@@ -3,15 +3,18 @@
 }
 
 .profile-title {
+  font-family: 'Noto Serif', serif;
 }
 
 .profile-subtitle {
+  font-family: 'Noto Serif', serif;
   padding: 0 0 2ex 0;
   color: #555;
   font-size: 3ex;
 }
 
 .profile-content {
+  font-family: 'Noto Sans', sans-serif;
   font-size: 2ex;
   color: #777;
 }
