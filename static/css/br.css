@@ -8,19 +8,68 @@
 
 .profile-subtitle {
   font-family: 'Noto Serif', serif;
-  padding: 0 0 2ex 0;
   color: #555;
   font-size: 3ex;
+  padding-bottom: 2ex;
 }
 
+.resume_section > .section-content > .section-item > .item-content ,
 .profile-content {
   font-family: 'Noto Sans', sans-serif;
   font-size: 2ex;
   color: #777;
+  padding-bottom: 2ex;
+  text-align: justify;
+}
+
+.resume_section > .section-title {
+  font-size: 5ex;
+  text-transform: uppercase;
+}
+
+.resume_section > .section-content > .section-item > .item-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3ex;
+}
+
+.resume_section > .section-content > .section-item > .item-subtitle {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 2.8ex;
+  padding-bottom: 2ex;
+}
+
+.resume_section > .section-content > .item-date {
+  color: #999;
+  font-size: 2.5ex;
+  padding-bottom: 0;
 }
 
 .fa {
   color: #555;
+}
+
+section.resume_section {
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div.resume_section {
+  /*background: grey;*/
+}
+
+div.resume_anchor {
+  align-self: flex-start;
+  margin-top: -7vh;
+}
+
+li.resume_section {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1ex;
 }
 
 header.masthead {

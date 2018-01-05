@@ -15,7 +15,19 @@ def show_home():
 
 @app.route('/about_me.html')
 def about_me():
-    return render_template('about_me.html')
+    return render_template('about_me.html', about_active='active')
+
+@app.route('/resume.html')
+def resume():
+    return render_template('resume.html',
+        resume_active='active',
+        body_attribute='data-spy="scroll" data-target="#profile_scroll" data-offset="70"',
+        profile_attr='id="profile_scroll"',
+        sections=[
+            'about',
+            'experience',
+        ],
+    )
 
 if __name__ == '__main__':
     opt = options.get_options()
