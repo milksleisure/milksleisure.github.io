@@ -28,6 +28,7 @@ def resume():
             'experience',
             'education',
             'skills',
+            #'objectives',
         ],
     )
 
