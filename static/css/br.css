@@ -8,19 +8,109 @@
 
 .profile-subtitle {
   font-family: 'Noto Serif', serif;
-  padding: 0 0 2ex 0;
   color: #555;
   font-size: 3ex;
+  padding-bottom: 2ex;
 }
 
+.resume_section > .section-content > .section-item > .item-content ,
 .profile-content {
   font-family: 'Noto Sans', sans-serif;
   font-size: 2ex;
   color: #777;
+  padding-bottom: 2ex;
+  text-align: justify;
+  /*background: yellow;*/
 }
 
+.resume_section {
+  width: 100%;
+}
+
+.resume_section > .section-title {
+  font-size: 5ex;
+  text-transform: uppercase;
+  /*background: red;*/
+}
+
+.resume_section > .section-content > .section-item > .item-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3ex;
+}
+
+.resume_section > .section-content > .section-item > .item-subtitle {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 2.8ex;
+  padding-bottom: 2ex;
+}
+
+.resume_section > .section-content {
+  padding-bottom: 2ex;
+}
+
+.resume_section > .section-content > .item-date {
+  color: #999;
+  font-size: 2.8ex;
+  font-style: italic;
+  overflow: visible;
+  white-space: nowrap;
+  padding-bottom: 0;
+  /*background: blue;*/
+}
+
+.devicon,
 .fa {
   color: #555;
+}
+
+.devicon {
+  font-size: 2.1em;
+}
+
+.icon-box {
+  text-align: center;
+  padding-bottom: 1.2ex;
+  min-height: 2.1em;
+}
+
+.icon-box > .fa {
+  font-size: 2em;
+}
+
+.icon-word {
+  text-align: center;
+  margin-top: -1em;
+  font-size: 1.2ex;
+}
+
+section.resume_section {
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+div.resume_section {
+  /*background: grey;*/
+}
+
+div.resume_anchor {
+  align-self: flex-start;
+  margin-top: -7vh;
+}
+
+li.resume_section {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1ex;
+}
+
+@media (max-width: 767px) {
+    .affix {
+        position: static;
+    }
 }
 
 header.masthead {
