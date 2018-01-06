@@ -26,6 +26,7 @@ def resume():
         sections=[
             'about',
             'experience',
+            'education',
         ],
     )
 
