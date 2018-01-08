@@ -1,4 +1,10 @@
-.profile-image {
+span.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.profile-image {
   border: 5px solid #cfd8dc;
 }
 
@@ -28,7 +34,6 @@
 }
 
 .resume_section > .section-title {
-  font-size: 5ex;
   text-transform: uppercase;
   /*background: red;*/
 }
@@ -36,27 +41,18 @@
 .resume_section > .section-content > .section-item > .item-title {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 3ex;
 }
 
 .resume_section > .section-content > .section-item > .item-subtitle {
   color: #aaa;
   text-transform: uppercase;
-  font-size: 2.8ex;
-  padding-bottom: 2ex;
-}
-
-.resume_section > .section-content {
-  padding-bottom: 2ex;
 }
 
 .resume_section > .section-content > .item-date {
   color: #999;
-  font-size: 2.8ex;
   font-style: italic;
   overflow: visible;
   white-space: nowrap;
-  padding-bottom: 0;
   /*background: blue;*/
 }
 
@@ -89,7 +85,6 @@ section.resume_section {
   border-bottom: 1px solid #eee;
   display: flex;
   align-items: center;
-  min-height: 100vh;
 }
 
 div.resume_section {
@@ -107,10 +102,61 @@ li.resume_section {
   margin-bottom: 1ex;
 }
 
+/* bigger screen */
+@media (min-width: 768px) {
+  .resume_title {
+    font-size:9ex;
+  }
+
+  section.resume_section {
+    min-height: 100vh;
+  }
+
+  .resume_section > .section-title {
+    font-size: 5ex;
+  }
+
+  .resume_section > .section-content > .section-item > .item-title {
+    font-size: 3ex;
+  }
+
+  .resume_section > .section-content > .section-item > .item-subtitle {
+    font-size: 2.8ex;
+    padding-bottom: 2ex;
+  }
+
+  .resume_section > .section-content {
+    padding-bottom: 2ex;
+  }
+
+  .resume_section > .section-content > .item-date {
+    font-size: 2.8ex;
+  }
+}
+
+
 @media (max-width: 767px) {
-    .affix {
-        position: static;
-    }
+  .affix {
+    position: static;
+  }
+
+  section.resume_section {
+    padding-left: 10vw;
+  }
+
+  .resume_section > .section-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .resume_nav {
+    visibility: hidden;
+    max-height: 0vh;
+  }
+
+  .icon-box {
+    padding-top: 1.2ex;
+  }
 }
 
 header.masthead {
