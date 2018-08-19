@@ -1,3 +1,16 @@
+.print-content {
+    display: none;
+}
+
+@media print {
+    .non-printable {
+        display: none !important;
+    }
+    .print-content {
+        display: block !important;
+    }
+}
+
 span.profile-image {
   display: flex;
   justify-content: center;
