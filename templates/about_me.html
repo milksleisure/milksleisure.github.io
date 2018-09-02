@@ -6,16 +6,16 @@
 
 {% block profile_content %}
 <ul class="nav nav-pills">
-<li class="active"><a data-toggle="tab" href="#standard">English</a></li>
-<li><a data-toggle="tab" href="#chinese">中文</a></li>
+<li class="active"><a data-toggle="tab" href="#chinese">中文</a></li>
+<li><a data-toggle="tab" href="#standard">English</a></li>
 </ul>
 
 <div class="tab-content">
-<div id="standard" class="tab-pane fade in active">
-  {% include 'about_me/bio.html' %}
-</div>
-<div id="chinese" class="tab-pane fade">
+<div id="chinese" class="tab-pane fade in active">
   {% include 'about_me/bio_chinese.html' %}
+</div>
+<div id="standard" class="tab-pane fade">
+  {% include 'about_me/bio.html' %}
 </div>
 </div>
 
