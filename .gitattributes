@@ -1,1 +1,2 @@
 doc/debian_arm64_w_busybox.tar.gz filter=lfs diff=lfs merge=lfs -text
+doc/eglretrace-release.apk filter=lfs diff=lfs merge=lfs -text
